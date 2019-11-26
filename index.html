@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>ToDOM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="app">
+        <div class="jumbotron">
+        <h1 class="display-4">My Todo App</h1>
+        </div>
+        <section>
+            <div class="input-group mb-3">
+                <!-- <label for="todo-input">Add to your todo list!</label> -->
+                <input type="text" class="form-control" id="todo-input" placeholder="Add to your todo list!" aria-label="Add to your todo list!" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button id="add-todo" class="btn btn-success">ADD</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="input-group mb-3">
+                <!-- <label for="index-input">Remove an index from your todo list! (Counting from zero because coding.)</label> -->
+                <input type="text" class="form-control" id="index-input" placeholder="Remove an index from your todo list!" aria-label="Remove an index from your todo list!" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button id="remove-todo" class ="btn btn-danger">REMOVE</button>
+                </div>
+            </div>
+        </section>
+        <ol id="todo-list"></ol>
+            </div>
+    <script src = "./deleteTodo.js"></script>
+    <script src = "./addTodo.js"></script>
+</body>
+</html>
