@@ -9,13 +9,22 @@ const clearTodos = () => {
 
 const refreshTodos = () => {
     clearTodos();
-    printTodos();
 }
 
 const indexInput = document.querySelector('#index-input');
 
-document.querySelector('#remove-todo').addEventListener('click', function() {
-    deleteTodo(indexInput.value, 1);
-    refreshTodos();
-    indexInput.value = '';
+const clearCompleted = () => {
+    for (let i = 0; i < todos.length; i++) {
+    if (todos[i].completed === true) {
+        allLi[i].remove()
+    } 
+}
+}
+
+document.querySelector('#clear-all').addEventListener('click', function() {
+    clearTodos();
+})
+
+document.querySelector('#clear-completed').addEventListener('click', function() {
+    clearCompleted();
 })
