@@ -8,7 +8,7 @@ const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
 const storeTodo = str => {
     let todo = {
         todoText: str,
-        date: `${days[new Date().getDay()]}, ${new Date().getMonth() + 1}-${new Date().getDate()}-${new Date().getFullYear()}`,
+        date: `${days[new Date().getDay()]}, ${new Date().getMonth() + 1}/${new Date().getDate()}/${new Date().getFullYear()}`,
         completed: false,
     }
     todos.push(todo);
