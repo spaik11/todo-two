@@ -1,5 +1,5 @@
 let todos = [];
-let completedList = [];
+
 const todoOl = document.querySelector('#todo-list');
 const userInput = document.querySelector('#todo-input');
 
@@ -27,8 +27,9 @@ const printTodo = (todo) => {
 }
 
 const printTodos = () => {
-    for (const todo of todos) {
-        console.log(todo)
+    const stillTodo = todos.filter(todo => todo.completed === false);
+
+    for (const todo of stillTodo) {
         printTodo(todo);
     }
 }
