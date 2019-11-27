@@ -1,9 +1,16 @@
 .app {
     padding-left: 200px;
     padding-right: 200px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 button {
     width: 200px;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
 }

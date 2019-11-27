@@ -25,14 +25,15 @@
             <div class="input-group mb-3">
                 <!-- <label for="index-input">Remove an index from your todo list! (Counting from zero because coding.)</label> -->
                 <!-- <input type="text" class="form-control" id="index-input" placeholder="Remove an index from your todo list!" aria-label="Remove an index from your todo list!" aria-describedby="button-addon2"> -->
-                <div class="input-group-append">
+                <div class="input-group-append" id="button-container">
                     <button id="clear-all" class ="btn btn-danger">Clear All</button>
-                    <button id="clear-completed" class ="btn btn-danger">Clear Completed</button>
+                    <button id="clear-completed" class ="btn btn-primary">Clear Completed</button>
+                    <button id="display-all" class ="btn btn-warning">Display All Todos</button>
                 </div>
             </div>
         </section>
         <ol id="todo-list"></ol>
-            
+
             </div>
     <script src = "./deleteTodo.js"></script>
     <script src = "./addTodo.js"></script>
