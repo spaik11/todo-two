@@ -21,7 +21,7 @@ const printTodo = (todo) => {
     makeLi.addEventListener('click', function(event) {
         event.target.style.textDecoration = 'line-through';
         todo.completed = true;
-})
+    })
     makeLi.innerText = `${todo.todoText} (${todo.date})`;
     todoOl.appendChild(makeLi);
 }
